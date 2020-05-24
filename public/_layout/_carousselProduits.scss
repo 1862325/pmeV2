@@ -1,0 +1,78 @@
+//----------------------------------------------------//
+//                                                    //
+//             // Caroussel Produits //               //
+//             _carousselProduits.scss                //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche caroussel de l'accueil
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.produits{
+    @include flex-column-center;
+    padding: 6em 5em;
+    background-color: var(--gris-pale);
+    color: var(--gris-fonce);
+
+    & .p-intro{
+        @include flex-column-center;
+        padding: 0 10em;
+        text-align: center;
+        color: var(--gris-fonce);
+
+        & p{
+            margin: 2em 0;
+            font-weight: 400;
+        }
+    }
+
+    & h2{
+        color: var(--noir);
+    }
+
+    & .carousel{
+        height: 40em;
+        top: -12em;
+        left: -7em;
+    }
+
+    & article{
+        @include flex-column-center;
+        width: 25em;
+        margin: 0 2em;
+        padding: 1em;
+        background-color: var(--blanc);
+
+        & h3{
+            margin: 2em 0;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 500;
+            color: var(--gris-fonce);
+        }
+
+        & button{
+            @include button;
+            padding: .5rem;
+            font-size: .75em;
+            background-color: var(--vert-pale);
+
+            &:hover{
+                background-color: var(--vert);
+            }
+        }
+    }
+
+    & .btn-produits{
+        @include button;
+        position: relative;
+        top: -10em;
+        background-color: var(--vert);
+        padding: .6rem .8rem;
+        font-size: .9rem;
+
+        &:hover{
+            background-color: var(--vert-fonce);
+        }
+    }
+}

@@ -1,0 +1,76 @@
+//----------------------------------------------------//
+//                                                    //
+//              // NAV PRINCIPALE //                  //
+//               _navPrincipale.scss                  //
+//----------------------------------------------------//
+
+header{
+    & .nav-wrapper{
+        display: flex;
+    }
+
+    & nav{
+      @include reset-nav-materialize;
+    }
+
+    & ul{
+        display: flex;
+        font-family: 'Roboto Slab', serif;
+        font-size: .8em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--blanc);
+        
+        & li{
+            margin: 0 .8em;
+            
+            &:hover{
+                color: var(--gris-pale);
+                border-bottom: 2px solid var(--vert);
+            }
+        }
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Css bouton scroll to top
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#top-btn{
+    @include button;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    padding: .4em .5em;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: var(--mauve);
+    display: none;
+    z-index: 1999;
+
+    &:hover{
+        background-color: var(--mauve-fonce);
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// class rajouter par jquery
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.sticky{
+    @include flex-items-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1em 8em;
+    z-index: 19999;
+    background-color: var(--vert-t);
+    border-bottom: 2px solid var(--vert);
+
+    & img{
+        width: 10%;
+        height: auto;
+    }
+}

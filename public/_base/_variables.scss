@@ -1,0 +1,26 @@
+//----------------------------------------------------//
+//                                                    //
+//                  // VARIABLES //                   //
+//                 _variables.scss                    //
+//----------------------------------------------------//
+
+/*////[Variables]
+________________________________________________________*/
+:root{
+    /*[Variantes de couleurs]*/
+    --mauve: hsl(298, 41%, 51%);
+    --mauve-fonce: hsl(308, 42%, 45%);
+    --vert-pale: hsl(155, 23%, 50%);
+    --vert: hsl(155, 30%, 37%);
+    --vert-fonce: hsl(156, 31%, 31%);
+    --vert-t: hsla(155, 30%, 37%, 0.664);
+    --gris-tres-pale: hsl(0, 0%, 94%);
+    --gris-pale: hsl(0, 0%, 89%);
+    --gris: hsl(0, 0%, 59%);
+    --gris-fonce: hsl(0, 0%, 10%);
+    --blanc: hsl(0, 0%, 100%);
+    --noir: hsl(0, 0%, 0%);
+    /*[Variantes de medias queries]*/
+    --breakpoint-1200: 1200;
+    --breakpoint-1800: 1800;
+}

@@ -1,0 +1,119 @@
+//----------------------------------------------------//
+//                                                    //
+//                   // MIXIN //                      //
+//                   _mixin.scss                      //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Raccourcis pour écriture des media queries (exemple: @include rwd-min-width(700) {})
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin rwd-min-width($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+ @mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ @mixin flex-column-center2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ @mixin flex-items-center{
+     display: flex;
+     align-items: center;
+ }
+
+ @mixin flex-column{
+     display: flex;
+     flex-direction: column;
+ }
+
+ @mixin input-text{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--blanc);
+ }
+
+@mixin ligne-after{
+    content: "";
+    display: block;
+    background-color: var(--vert);
+    height: 2px;
+    width: 7em;
+    margin-top: .5em;
+}
+
+@mixin button{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@mixin reset-nav-materialize {
+    color: inherit;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    background-color: transparent;
+    line-height: normal;
+    box-shadow: none;
+
+    a {
+        color: inherit;
+    }
+
+    i,
+    i.material-icons {
+      display: inline-block;
+      font-size: inherit;
+      height: auto;
+      line-height: 1;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            transition: none;
+            float: none;
+            padding: 0;
+
+            &.active {
+                background-color: transparent;
+            }
+        }
+
+        a {
+            display: inline-block;
+            transition: none;
+            font-size: inherit;
+            color: inherit;
+            padding: 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
