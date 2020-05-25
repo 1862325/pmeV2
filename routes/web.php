@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "BistroController@index");
-Route::get('/', "BistroController@show");
+Route::get('/voirmenu', "BistroController@show");
 Route::get('/menu', "ProduitController@index");
-Route::get('menu/{produit}', "ProduitController@show")->where(["produit", '[0-9]+']);
+Route::get('/menu/{produit}', "ProduitController@show")->where(["produit", '[0-9]+']);

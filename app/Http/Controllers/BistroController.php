@@ -46,7 +46,7 @@ class BistroController extends Controller
      */
     public function show(Bistro $bistro)
     {
-        return redirect()->action('/menu', "ProduitController@index");
+        return redirect()->action("ProduitController@index");
     }
 
     /**
