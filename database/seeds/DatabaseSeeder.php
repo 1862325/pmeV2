@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $salade->slug="salade"; 
         $salade->description="Cras imperdiet nunc sed gravida interdum. Aenean arcu arcu, volutpat nec vestibulum sed, molestie ut neque. Aenean aliquet auctor gravida. Morbi at mattis orci. Aliquam vel interdum lacus, sed consectetur mauris. Maecenas quis eros varius, luctus turpis pulvinar, cursus tortor."; 
         $salade->calories="120"; 
-        $salade->prix="4'29"; 
+        $salade->prix="4,29"; 
         $salade->save();
 
         $calmar = new Produit(); 
