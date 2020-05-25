@@ -14,9 +14,8 @@ class ProduitController extends Controller
      */
     public function index()
     {
-        $produits = [];
-        for ($i= 0; $i <10; $i +=1){
-            $produits = Produit::fake();
+        for ($i = 0; $i < 6; $i += 1) {
+             $produits[] = Produit::fake();
         }
         return view("bistro.menu", ['produits' => $produits]);
     }

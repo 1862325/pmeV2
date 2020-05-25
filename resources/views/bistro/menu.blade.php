@@ -8,84 +8,21 @@
    <section class="liste-produits" id="nav-produits">
         <h2>Notre menu</h2>
         <div class="liste-menu">
+        @foreach($produits as $produit)
             <article class="m-1">
                 <img src="img/salade-menu.jpg" alt="">
                 <div class="infos-menu">
-                    <h3>Salade du chef</h3>
+                    <h3>{{$produit->nom}}</h3>
                     <div class="description-menu">
-                        <p>120 calories</p>
-                        <p>4,29$</p>
+                        <p>{{$produit->calories}} calories</p>
+                        <p>{{$produit->prix}}$</p>
                     </div>
                 </div>
                 <div class="btn-menu">
                     <a href="">Consulter</a>
                 </div>
             </article>
-            <article class="m-2">
-                <img src="img/calmar-menu.jpg" alt="">
-                <div class="infos-menu">
-                    <h3>Calmars frits</h3>
-                    <div class="description-menu">
-                        <p>450 calories</p>
-                        <p>8,99$</p>
-                    </div>
-                </div>
-                <div class="btn-menu">
-                    <a href="fiche.html">Consulter</a>
-                </div>
-            </article>
-            <article class="m-3">
-                <img src="img/burger-menu.jpg" alt="">
-                <div class="infos-menu">
-                    <h3>Burger avec boulette de boeuf</h3>
-                    <div class="description-menu">
-                        <p>1350 calories</p>
-                        <p>14,89$</p>
-                    </div>
-                </div>
-                <div class="btn-menu">
-                    <a href="">Consulter</a>
-                </div>
-            </article>
-            <article class="m-4">
-                <img src="img/burger2-menu.jpg" alt="">
-                <div class="infos-menu">
-                    <h3>Burger végé</h3>
-                    <div class="description-menu">
-                        <p>1050 calories</p>
-                        <p>16,39$</p>
-                    </div>
-                </div>
-                <div class="btn-menu">
-                    <a href="">Consulter</a>
-                </div>
-            </article>
-            <article class="m-5">
-                <img src="img/pennes-menu.jpg" alt="">
-                <div class="infos-menu">
-                    <h3>Pennes à la sauce alfredo avec tomates</h3>
-                    <div class="description-menu">
-                        <p>875 calories</p>
-                        <p>13,99$</p>
-                    </div>
-                </div>
-                <div class="btn-menu">
-                    <a href="">Consulter</a>
-                </div>
-            </article>
-            <article class="m-6">
-                <img src="img/brownie-menu.jpg" alt="">
-                <div class="infos-menu">
-                    <h3>Brownie aux 3 chocolats</h3>
-                    <div class="description-menu">
-                        <p>450 calories</p>
-                        <p>9,49$</p>
-                    </div>
-                </div>
-                <div class="btn-menu">
-                    <a href="">Consulter</a>
-                </div>
-            </article>
+        @endforeach
         </div>
    </section>
    <section class="livraison fade-scroll" id="nav-livraison">

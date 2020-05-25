@@ -15,7 +15,7 @@
            </div>
            <div class="carousel-item">
                <article class="p-2">
-                   <img src="img/pates.jpg" alt="">
+                   <img src="img/pennes.jpg" alt="">
                    <h3>Pennes à la sauce alfredo avec tomates</h3>
                    <button type="button">En savoir plus</button>
                </article>
