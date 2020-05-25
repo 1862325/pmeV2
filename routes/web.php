@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/installer', "AppController@installer");
 Route::get('/', "BistroController@index");
 Route::get('/voirmenu', "BistroController@show");
 Route::get('/menu', "ProduitController@index");
