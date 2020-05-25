@@ -49,7 +49,9 @@ class ProduitController extends Controller
      */
     public function show(Produit $produit)
     {
-        //
+        $produit = Produit::fake();
+        $produit = Produit::find($id);
+        return view("bistro.fiche", ['produit' => $produit]);
     }
 
     /**

@@ -9,7 +9,7 @@ class Produit extends Model
     static public function fake() {
         $f = \Faker\Factory::create("fr_CA");
         $resultat = new self();
-        $resultat->id = $f->randomNumber(5);
+        $resultat->id = $f->randomNumber(2);
         $resultat->nom = $f->realText(30);
         $resultat->slug = $f->realText(30);
         $resultat->description = $f->realText(300);

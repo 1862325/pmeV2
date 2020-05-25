@@ -5,17 +5,17 @@
         <p>></p>
         <p>Menu</p>
         <p>></p>
-        <p>Calmars frits</p>
+        <p>{{$produit->nom}}</p>
    </section>
    <section class="fiche-produit">
         <article class="fiche-description">
-            <img src="img/calmar-fiche.jpg" alt="">
+            <img src="img/{{$produit->slug}}-fiche.jpg" alt="">
             <div class="fiche-infos">
-                <h2>Calmarts frits</h2>
-                <p>Morbi et ipsum eu leo fringilla venenatis. Vivamus cursus leo vel metus vestibulum, ut malesuada libero blandit. Aenean mollis commodo ullamcorper.</p>
+                <h2>{{$produit->nom}}</h2>
+                <p>{{$produit->description}}</p>
                 <div class="calo-prix">
-                    <p>450 calories</p>
-                    <p>8,99$</p>
+                    <p>{{$produit->calories}} calories</p>
+                    <p>{{$produit->prix}}$</p>
                 </div>
                 <div class="ajout">
                     <select id="nombre">

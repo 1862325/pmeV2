@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="btn-menu">
-                    <a href="">Consulter</a>
+                    <a href="{{action('ProduitController@show', $produit)}}">Consulter</a>
                 </div>
             </article>
         @endforeach

@@ -28,7 +28,7 @@
                </article>
            </div>
        </div>
-       <a href="liste.html"><button type="button" class="btn-produits">Voir le menu</button></a>
+       <a href="{{action('BistroController@show')}}"><button type="button" class="btn-produits">Voir le menu</button></a>
    </section>
    <section class="heures fade-scroll" id="nav-heures">
         <h2>Les heures d'ouvertures</h2>
