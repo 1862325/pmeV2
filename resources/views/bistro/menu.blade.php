@@ -10,7 +10,7 @@
         <div class="liste-menu">
         @foreach($produits as $produit)
             <article class="m-1">
-                <img src="img/salade-menu.jpg" alt="">
+                <img src="img/{{$produit->slug}}-menu.jpg" alt="">
                 <div class="infos-menu">
                     <h3>{{$produit->nom}}</h3>
                     <div class="description-menu">
