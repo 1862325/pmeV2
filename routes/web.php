@@ -25,3 +25,4 @@ Route::get('/admin/create', "ProduitController@create");
 Route::post('/admin/create', "ProduitController@store");
 Route::get('/admin/liste', "ProduitController@liste");
 Route::get('/admin/liste/{produit}', "ProduitController@edit")->where(["produit", '[0-9]+']);
+Route::post('/admin/liste/{produit}', "ProduitController@update")->where(["produit", '[0-9]+']);

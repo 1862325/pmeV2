@@ -83,7 +83,15 @@ class ProduitController extends Controller
      */
     public function update(Request $request, Produit $produit)
     {
-        //
+        if ($request->has('annuler')) {
+            return redirect()->action("ProduitController@show", $produit);
+        }
+        $validatedData = $request->validate(Produit::$rules);
+
+        $donnees = $request->all();
+        $produit->fill($donnees);
+        $produit->save();
+        return redirect()->action("ProduitController@show", $produit);
     }
 
     /**

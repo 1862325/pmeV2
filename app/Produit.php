@@ -6,6 +6,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produit extends Model
 {
+    protected $fillable = [
+        "id",
+        "nom",
+        "slug",
+        "description",
+        "calories",
+        "prix",
+    ];
+
+    static public $rules = [
+        "nom"=>"required|min:5|max:255",
+        "slug"=>"required|min:5|max:255",
+        "description"=>"required|min:5",
+        "calories"=>"required|integer",
+        "prix"=>"required|between:0,99.99'",
+    ];
+
     static public function fake() {
         $f = \Faker\Factory::create("fr_CA");
         $resultat = new self();
