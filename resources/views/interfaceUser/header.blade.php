@@ -6,7 +6,7 @@
     </section>
    <header>
        <div class="nav-wrapper">
-           <img src="svg/logo-blanc.svg" alt="">
+           <img src="{{asset('svg/logo-blanc.svg')}}" alt="">
            <nav class="transparent, nav-principale">
                <ul>
                    <a href="#nav-produits" id="btn-produits"><li>Produits</li></a>

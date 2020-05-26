@@ -32,9 +32,9 @@
         <article class="fiche-recommendations">
             <h3>Les plus populaires</h3>
             <div>
-                <img src="img/pennes-appercu.jpg" alt="Pennes alfredo">
-                <img src="img/burger-appercu.jpg" alt="burger boeuf">
-                <img src="img/brownie-appercu.jpg" alt="brownies">
+                <img src="{{asset('img/pennes-appercu.jpg')}}" alt="Pennes alfredo">
+                <img src="{{asset('img/burger-appercu.jpg')}}" alt="burger boeuf">
+                <img src="{{asset('img/brownie-appercu.jpg')}}" alt="brownies">
             </div>
         </article>
    </section>
@@ -42,26 +42,26 @@
         <h2>Comment commander?</h2>
         <article class="etapes-livraison">
             <div class="e-1">
-                <img src="svg/tap.svg" alt="tap svg">
+                <img src="{{asset('svg/tap.svg')}}" alt="tap svg">
                 <p>Ajoutez à votre commande les items souhaités</p>
             </div>
             <div class="e-2">
-                <img src="svg/shapes.svg" alt="confirmer svg">
+                <img src="{{asset('svg/shapes.svg')}}" alt="confirmer svg">
                 <p>Confirmez votre commande</p>
             </div>
             <div class="e-3">
-                <img src="svg/files-and-folders.svg" alt="documents svg">
+                <img src="{{asset('svg/files-and-folders.svg')}}" alt="documents svg">
                 <p>Un représentant vous contactera pour le paiement par téléphone ou interact</p>
             </div>
             <div class="e-4">
-                <img src="svg/food-and-restaurant.svg" alt="hamburger svg">
+                <img src="{{asset('svg/food-and-restaurant.svg')}}" alt="hamburger svg">
                 <p>Votre commande sera ensuite livrée</p>
             </div>
         </article>
    </section>
    <section class="perimetre-livraison">
        <h2>Livraison à domicile</h2>
-       <img src="svg/maps-and-location.svg" alt="location svg">
+       <img src="{{asset('svg/maps-and-location.svg')}}" alt="location svg">
        <p>Vérifiez si vous êtes dans le périmètre de 10 kilomètres pour la livraison</p>
        <input type="text" name="code-postal" placeholder="Votre code postal">
        <button type="button">Vérifier</button>
