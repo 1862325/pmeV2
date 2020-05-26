@@ -17,7 +17,7 @@
         <img src="svg/logo-regulier.svg" alt="logo bistro la fourchette">
         <input type="text" name="usager" placeholder="Nom d'utilisateur">
         <input type="password" name="pw" placeholder="Mot de passe">
-        <a href="{{action('AdminController@accueil')}}"><button type="button">Se connecter</button></a>
+        <a href="{{action('ProduitController@accueil')}}"><button type="button">Se connecter</button></a>
         <a href=""><p>Mot de passe oublié?</p></a>
     </section>
 </body>

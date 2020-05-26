@@ -19,5 +19,9 @@ Route::get('/voirmenu', "BistroController@show");
 Route::get('/menu', "ProduitController@index");
 Route::get('/menu/{produit}', "ProduitController@show")->where(["produit", '[0-9]+']);
 
-Route::get('/login', "AdminController@index");
-Route::get('/admin', "AdminController@accueil");
+Route::get('/login', "ProduitController@login");
+Route::get('/admin', "ProduitController@accueil");
+Route::get('/admin/create', "ProduitController@create");
+Route::post('/admin/create', "ProduitController@store");
+Route::get('/admin/liste', "ProduitController@liste");
+Route::get('/admin/liste/{produit}', "ProduitController@edit")->where(["produit", '[0-9]+']);

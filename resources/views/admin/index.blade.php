@@ -9,8 +9,8 @@
                     <p class="chiffre">6</p>
                     <p>Produits</p>
                     <div>
-                        <button type="button">Gérer les </br> produits</button>
-                        <button type="button">Ajouter un </br> nouveau produits</button>
+                        <a href="{{action('ProduitController@liste')}}"><button type="button">Gérer les </br> produits</button></a>
+                        <a href="{{action('ProduitController@create')}}"><button type="button">Ajouter un </br> nouveau produits</button></a>
                     </div>
                 </article>
 @endsection

@@ -28,7 +28,8 @@ class ProduitController extends Controller
      */
     public function create()
     {
-        //
+        $produit = Produit::fake();
+        return view("admin.create", ['produit' => $produit]);
     }
 
     /**
@@ -39,7 +40,16 @@ class ProduitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->has('annuler')) {
+            return redirect()->action("ProduitController@accueil");
+        }
+        $validatedData = $request->validate(Recette::$rules);
+
+        $produit = new Produit();
+        $donnees = $request->all();
+        $produit->fill($donnees);
+        $produit->save();
+        return redirect()->action("ProduitController@show", $produit);
     }
 
     /**
@@ -61,7 +71,7 @@ class ProduitController extends Controller
      */
     public function edit(Produit $produit)
     {
-        //
+        return view("admin.edit", ['produit' => $produit]);
     }
 
     /**
@@ -85,5 +95,21 @@ class ProduitController extends Controller
     public function destroy(Produit $produit)
     {
         //
+    }
+
+    public function login()
+    {
+        return view("admin.login");
+    }
+
+    public function accueil()
+    {
+        return view("admin.index");
+    }
+
+    public function liste()
+    {
+        $produits = Produit::all();
+        return view("admin.liste", ['produits' => $produits]);
     }
 }
