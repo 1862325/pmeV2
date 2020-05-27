@@ -1,6 +1,6 @@
 <footer>
         <section class="f-infos">
-            <img src="svg/logo-regulier.svg" alt="">
+            <img src="{{asset('svg/logo-regulier.svg')" alt="logo bistro">
             <div>
                 <p>(450) 667-7886</p>
                 <p>1731 Rue Le Royer Laval QC</p>
