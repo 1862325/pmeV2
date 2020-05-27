@@ -102,7 +102,11 @@ class ProduitController extends Controller
      */
     public function destroy(Produit $produit)
     {
-        //
+        if ($request->has('annuler')) {
+            return redirect()->action("ProduitController@show", $produit);
+        }
+        $recette->delete();
+        return redirect()->action("ProduitController@index");
     }
 
     public function login()

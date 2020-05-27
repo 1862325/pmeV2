@@ -11,21 +11,11 @@
         <div class="item-info3">
             <div class="item-icones">
                 <a href="{{action('ProduitController@edit', $produit)}}"><i class="fas fa-pen"></i></a>
-                <a href=""><i class="fas fa-times-circle"></i></a>
+                <a href="{{action('ProduitController@destroy', $produit)}}" onclick="return confirm('Voulez-vous vraiment supprimer le produit?')"><i class="fas fa-times-circle"></i></a>
             </div>
             <p>{{$produit->prix}}$</p>
         </div>
     </article>
     @endforeach
 </section>
-                
-                <div class="popup-overlay">
-                    <section id="popup" class="popup-content">
-                        <p>Voulez-vous vraiment supprimer le produit?</p>
-                        <div>
-                            <button type="submit" class="close">Annuler</button>
-                            <button type="submit">Supprimer</button>
-                        </div>
-                    </section>
-                </div>
 @endsection

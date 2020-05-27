@@ -21,5 +21,6 @@
                 @show
         </div>
     </main>
+    <script src="{{asset('js/eventAnimationScript.js')}}"></script>
 </body>
 </html>

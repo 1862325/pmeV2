@@ -1,5 +1,5 @@
 <aside class="itemGridAside">
-            <img src="{{asset('svg/logo-blanc.svg')}}" alt="logo bistro la fourchette">
+            <a href="{{action('ProduitController@accueil')}}"><img src="{{asset('svg/logo-blanc.svg')}}" alt="logo bistro la fourchette"></a>
             <h2>Vos options</h2>
             <nav class="nav-admin">
                 <ul>
