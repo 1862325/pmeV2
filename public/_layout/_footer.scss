@@ -29,6 +29,15 @@ footer{
                 margin-right: .5em;
             }
         }
+
+        & .p-sources{
+            margin-top: 4em;
+            font-weight: 500;
+            
+            &:hover{
+                color: var(--vert);
+            }
+        }
     }
     
     .f-form{

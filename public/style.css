@@ -123,6 +123,15 @@ footer .f-infos i:first-of-type {
   margin-right: .5em;
 }
 
+footer .f-infos .p-sources {
+  margin-top: 4em;
+  font-weight: 500;
+}
+
+footer .f-infos .p-sources:hover {
+  color: var(--vert);
+}
+
 footer .f-form {
   display: -webkit-box;
   display: -ms-flexbox;

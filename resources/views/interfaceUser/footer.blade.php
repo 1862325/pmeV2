@@ -10,7 +10,7 @@
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
             </div>
-            <a href="{{action('BistroController@sources')}}"><p>Sources du projet</p></a>
+            <a href="{{action('BistroController@sources')}}"><p class="p-sources">Sources du projet</p></a>
         </section>
         <section class="f-form">
             <h3>Nous contactez</h3>
