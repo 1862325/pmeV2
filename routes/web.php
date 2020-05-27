@@ -18,6 +18,7 @@ Route::get('/', "BistroController@index");
 Route::get('/voirmenu', "BistroController@show");
 Route::get('/menu', "ProduitController@index");
 Route::get('/menu/{produit}', "ProduitController@show")->where(["produit", '[0-9]+']);
+Route::get('/sources', "BistroController@sources");
 
 Route::get('/login', "ProduitController@login");
 Route::get('/admin', "ProduitController@accueil");

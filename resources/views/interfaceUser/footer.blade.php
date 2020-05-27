@@ -10,6 +10,7 @@
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
             </div>
+            <a href="{{action('BistroController@sources')}}"><p>Sources du projet</p></a>
         </section>
         <section class="f-form">
             <h3>Nous contactez</h3>
@@ -17,5 +18,8 @@
             <input type="text" name="adresse" placeholder="Votre adresse courriel">
             <input type="text" name="message" placeholder="Tapez votre message">
             <button type="button">Envoyer</button>
+        </section>
+        <section>
+            
         </section>
    </footer>

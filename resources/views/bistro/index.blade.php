@@ -10,21 +10,18 @@
                <article class="p-1">
                    <img src="img/salade.jpg" alt="">
                    <h3>Salade du chef</h3>
-                   <button type="button">En savoir plus</button>
                </article>
            </div>
            <div class="carousel-item">
                <article class="p-2">
                    <img src="img/pennes.jpg" alt="">
                    <h3>Pennes à la sauce alfredo avec tomates</h3>
-                   <button type="button">En savoir plus</button>
                </article>
            </div>
            <div class="carousel-item">
                <article class="p-3">
                    <img src="img/burger.jpg" alt="">
                    <h3>Burger avec boulette de boeuf</h3>
-                   <button type="button">En savoir plus</button>
                </article>
            </div>
        </div>

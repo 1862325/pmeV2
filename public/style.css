@@ -562,7 +562,7 @@ header ul li:hover {
 }
 
 .sticky img {
-  width: 10%;
+  width: 40%;
   height: auto;
 }
 
@@ -936,7 +936,7 @@ h2 {
   margin: .6em auto 0 auto;
 }
 
-.promotion h2:after, .fiche-produit h2:after, .itemGridContenu h2:after {
+.promotion h2:after, .fiche-produit h2:after, .itemGridContenu h2:after, .sources h2:after {
   content: "";
   display: block;
   background-color: var(--vert);
@@ -1291,5 +1291,30 @@ main {
 
 .itemGridContenu input[type=submit]:hover {
   background-color: --vert-fonce;
+}
+
+.sources {
+  padding: 6em 5em;
+}
+
+.sources h2 {
+  margin-bottom: 2em;
+}
+
+.sources article {
+  margin: 2em 0;
+}
+
+.sources img {
+  width: 10%;
+  height: auto;
+}
+
+.sources a {
+  font-weight: 400;
+}
+
+.sources a:hover {
+  color: var(--vert);
 }
 /*# sourceMappingURL=style.css.map */

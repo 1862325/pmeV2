@@ -85,4 +85,9 @@ class BistroController extends Controller
         //
     }
 
+    public function sources()
+    {
+        return view("bistro.sources");
+    }
+
 }
