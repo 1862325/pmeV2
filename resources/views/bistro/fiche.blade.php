@@ -1,9 +1,9 @@
 @extends("interfaceUser.index")
 @section("contenu")
 <section class="fil-ariane">
-        <p>Accueil</p>
+        <a href="{{action('BistroController@index')}}"><p>Accueil</p></a>
         <p>></p>
-        <p>Menu</p>
+        <a href="{{action('ProduitController@index')}}"><p>Menu</p></a>
         <p>></p>
         <p>{{$produit->nom}}</p>
    </section>

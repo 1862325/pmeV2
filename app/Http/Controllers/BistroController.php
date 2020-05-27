@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Bistro;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 
 class BistroController extends Controller
 {
@@ -82,4 +84,5 @@ class BistroController extends Controller
     {
         //
     }
+
 }

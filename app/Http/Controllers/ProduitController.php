@@ -113,10 +113,11 @@ class ProduitController extends Controller
     {
         return view("admin.login");
     }
-
+    
     public function accueil()
     {
-        return view("admin.index");
+        $count = Produit::all()->count();
+        return view("admin.index", ['count' => $count]);
     }
 
     public function liste()

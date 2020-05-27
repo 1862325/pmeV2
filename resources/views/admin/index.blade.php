@@ -6,7 +6,7 @@
                     <button type="button">Afficher les </br> commandes</button>
                 </article>
                 <article class="infos-produits">
-                    <p class="chiffre">6</p>
+                    <p class="chiffre">{{$count}}</p>
                     <p>Produits</p>
                     <div>
                         <a href="{{action('ProduitController@liste')}}"><button type="button">Gérer les </br> produits</button></a>
